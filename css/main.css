@@ -1,367 +1,367 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+@font-face {
+    font-family: 'cooper_hewittheavy';
+    src: url('../fonts/cooperhewitt-heavy-webfont.woff2') format('woff2'),
+         url('../fonts/cooperhewitt-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap'); /* Merriweather Sans: Regular 400 */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap'); /* Merriweather Sans: Light 300*/
 body {
-    font-family: sans-serif;
-    line-height: 1.5;
-}
-
-h1 {
-    font-weight: bold;
-    font-size: 1.3em;
-    text-align: center;
-    color: #fff;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-header {
-    width: 960px;
-    margin: 0 auto;
-    padding: 50px 0;
-    background-color: #555;
-    position: relative;
-}
-
-header img {
-    /* ADD THE RULES POSITION THE LOGO*/
-    /* 3 position options: 
-    1. relative (leaves the space it takes up in the layout)
-    2. absolute (collapses the space it takes up and positions it to the browser window)
-    3. absolute & relative (collapses the space it takes up and positions to a parent *relative container */
-    position: absolute;
-    top: 85px;
-    left: 50px;
-}
-
-section {
-    width: 960px;
-    margin: 0 auto;
-}
-
-.col {
-    width: 440px;
-    min-height: 400px;
-    padding: 90px 20px 0 20px;
-    background-color: #e0e0e0;
-    float: left;
-}
-
-.col:last-of-type {
-    background-color: #ededed;
-    /*change the background color of second col to see it*/
-}
-
-.box-1 {
-    width: 150px;
-    height: 150px;
-    background-color: #3f3f3f;
-}
-
-.box-2 {
-    width: 150px;
-    height: 150px;
-    background-color: #696969;
-    /* ADD THE RULES POSITION THE SECOND BOX */
-    position: relative;
-    top: 0;
-    left: 150px;
-}
-
-.box-3 {
-    width: 150px;
-    height: 150px;
-    background-color: #000;
-    /* ADD THE RULES POSITION THE THIRD BOX */
-    position: relative;
-    top: 0;
-    left: 300px;
-}
-
-footer {
-    width: 958px;
-    height: 48px;
-    border: 1px solid #555;
-    margin: 0 auto;
     background-color: #fff;
-    /* ADD THE RULES POSITION THE FOOTER */
-    /* 
-    because it's relaitve to the viewport, to horizontally center the 
-    footer position it from the left 50% and give it a negative margin
-    of half of it's width
-    */
+    font-family: 'cooper_hewittheavy';
+    font-size: 1.125rem; /* 18px */
+}
+.flex-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner-container {
+    padding: 0 0.5rem;
+}
+main{
+    padding: 0.625px; /* 10px */
+}
+/* ************************* Typography ************************* */
+h1{
+    font-size: 1.125rem;
+}
+h2{
+    font-family: 'cooper_hewittheavy';
+    font-weight: 700;
+    font-style: normal;
+    color: #475d69;
+    font-size: 5.175rem;
+}
+.color-text-title-good > span {
+    color: #404040;
+    display: block;
+    margin-bottom: -10.2rem;
+}
+.text-good-food-div > h2 {
+    color: #707070;
+}
+.color-text-title-Local-video > span {
+    color: #2c5498;
+    display: block;
+    margin-bottom: -10.2rem;
+}
+.videoBlog > h2{
+    color: #f2f2f2;
+}
+.good-food-section{
+    padding-top: 2.3125rem;
+}
+/* .goodFood > span{
+    color: #3d3737;
+} */
+/* .localTravel > span{
+    color: #0a4f96;
+} */
+.text-good-food-div,
+.text-Local-travel-div{
+    margin-bottom: 3rem;
+}
+.local-travel-section{
+    background-color: #f2f2f2;
+    padding-bottom: 2.3125rem;
+}
+.text-good-food-div > p, 
+section > p,
+.videoBlog-p-img > p{
+    font-size: 1.17rem; /* !!! what should be 1.3333rem according to PSD file, look but doesn't look correct ask instructor*/
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.btn{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.05rem; /* !!! what should be 1.3333rem according to PSD file, look but doesn't look correct ask instructor*/
+    background-color: #404040;
+    color: #f2f2f2;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #c65614;
+    color: #f2f2f2;
+}
+.videoBlog{
+    background-color: #404040;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    color: #f2f2f2;
+}
+.videoBlog-btn{
+    background-color: #f2f2f2;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.05rem; /* !!! what should be 1.3333rem according to PSD file, look but doesn't look correct ask instructor*/
+    color: #404040;
+    padding: 0.5rem 4rem 0.5rem 4rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+}
+.videoBlog-p-img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-content: stretch;
+    justify-content: flex-start;
+}
+.videoBlog-p-img > p{
+    padding-bottom: 1.5rem;/* 24px */
+}
+.color-text-title-good-stuff{
+    color: #404040;
+    text-align: center;
+}
+/* ************************* Header & Button ************************* */
+header{
+    background-color: #3a3a3a;
+    /* padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+}
+header button {
+    background-color: #3a3a3a;
+    border: none;
+}
+button{
+    background-color: #3d3737;
+    color: #fff;
+    /* border-radius: 10px; */
+    /* padding: 10px; */
+}
+svg{
+    width: 1.25rem; /* 20px */
+    stroke: #f6f6f6;
+}
+header a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 0.875rem; /* 14px */
+}
+h1 a{
+    color: #f2f2f2;
+    font-size: 3rem; /* 48px */
 }
 
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
-}
-
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
+/* ************************* Nav ************************* */
+nav{
     position: absolute;
-    width: 1px;
-}
-
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
+    width: 100vw;
+    top: 4.2rem;
+    left: 0;
+    /* once this changes to position absolute, it's no longer in the layout of the 
+    HTML, therefore it's no longer a flex item*/
     visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    background-color: #3a3a3a;
+    /* flex: 1 0 100%;
+    max-height: 0; */
+}
+/* spacial class that will show the nav when the button is clicked 
+(do not add to the html) */
+.show-nav{
+    max-height: 500px;
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+}
+.menu a{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 0.5rem; */ /* 8px */
 }
 
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
+/* .menu a:hover{
+    background-color: #707070;
+    color: #727812;
+} */
+a:hover{
+    background-color: #707070;
+    color: #727812;
+    border-radius: 1.5rem;
+    
 }
-
-.clearfix:after {
-    clear: both;
+ul.menu a {
+    font-size: 2rem;
+    color: #f2f2f2;
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    text-align: right;
+    /* text-decoration: underline; */
+    /* text-underline-position: under; */
+    justify-content: flex-end;
 }
-
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+.menu svg{
+    width: 0.625; /* 10px */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* align-content: stretch; */
+    /* justify-content: center; */
+    display: none;
 }
-
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+ul.submenu > li a {
+    text-decoration: underline;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5rem; /* 24px*/
 }
+/* What do you want to hover over? --> first selector + :hover
+   What do you want to change? --> second selector */
+.menu li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+    max-height: 14.0625rem; /* 225px */
+}
+.menu li:focus-within > ul,
+.menu li> ul:focus{
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+    max-height: 14.0625rem; /* 225px */
+    display: block;
+}
+/* .submenu {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0;
+}
+.submenu li{
+    border-bottom: 0.0625rem solid #cbd5e1; 1px
+} */
+/* ************************* Footer Nav ************************* */
+footer {
+    background-color: #3a3a3a;
+    text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    /* gap: 12px; */
+    flex-wrap: wrap;
+    color: #f2f2f2;
+    padding: 2.5rem 0.5rem 2.5rem 0.5rem;
+    margin-top: 2.4375rem;
+}
+a{
+    color: #cbc9c9;
+    text-decoration: none;
+    font-size: 1.2rem; /* 1.5px */
+    font-weight: 400;
+}
+a.footer__headline{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    color: #f2f2f2;
+    padding: 0 0 0 0.5rem;
+}
+ul.footer__list{
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+ul.footer__list a:hover path,
+ul.footer__list a:hover rect,
+ul.footer__list a:hover polygon,
+ul.footer__list a:hover{
+    fill: tomato;
+    color: #f2f2f2;
+}
+.footer__list svg{
+    fill: #cbc9c9;
+    stroke:#3a3a3a;
+    width: 1.6875rem;
+}
+.footer__list ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    gap: 0.375rem;
+}
+/* ************************* Images ************************* */
+.img-breakfast{
+    width: 16.3125rem; /* 214px */
+    position: relative;
+    left: 2.615rem; /* 41.84px */
+}
+.img-platter{
+    width: 13.375rem; /* 214px */
+    position: relative;
+    top: -1.875rem; /* 30px */
+}
+.img-flight{
+    width: 13.375rem; /* 214px */
+    position: relative;
+    left: 5.5rem; /* 41.84px */
+}
+.text-Local-travel-div > a{
+    position: relative;
+    left: 10.8rem; /* 41.84px */
+}
+/* Crads */
+.stuff-section  img{
+    padding: 1.4375rem 1rem 3rem 1rem;
+    background-color: #f2f2f2;
+}
+.stuff-section p,
+.stuff-section h3{
+    padding: 0rem 1rem 0.825rem 1rem;
+}
+.stuff-section h3{
+    font-family: 'cooper_hewittheavy';
+    font-weight: 700;
+    font-size: 3rem;
+    color: #b29124;
+    position: relative;
+    top: -2rem;
+    padding-bottom: 0;
+}
+section a{
+    padding: 0rem 1rem 0 1rem;
+    font-size: 1.05rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #404040;
+    text-decoration: underline;
 
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important;
-        /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
+}
+.farmers-market-brewery-hot-chocolate-Tacos,
+.farmers-market-brewery-hot-chocolate-Tacos-padding-img{
+    padding: 0  0 3.5rem 0;
+}
+.farmers-market-brewery-hot-chocolate-Tacos-padding-img img{
+    padding: 0 0 6.1875rem 0;
+    background-color: #f2f2f2;
+}
+.farmers-market-brewery-hot-chocolate-Tacos-padding-img h3{
+    position: relative;
+    top: -3.4rem;
+}
+h3{
+    line-height: 3.2rem;
+}
+.stuff-section  svg{
+    width: 2.25rem;
+    height: 1.875rem;
+    fill:#c65614;
+    stroke: #c65614;
+    position: relative;
+    top: 3rem;
+    left: 4.2rem;
+}
+@media screen and (max-width: 52.5rem){
+    /* To hide the dropdown svg  for small screen */
+    .menu svg{
+        visibility: hidden;
     }
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-    thead {
-        display: table-header-group;
-    }
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-    img {
-        max-width: 100% !important;
-    }
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+}
+@media screen and (min-width: 52.5rem) { /* 840px */
+}
+@media screen and (min-width: 84.5rem) { /* 1352px */
 }
